@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Store</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to JS file (defer ensures it runs after HTML is loaded) -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Page Header -->
+    <header>
+        <h1>Recipe Store</h1>
+    </header>
+
+    <main>
+        <!-- CATEGORY SECTION -->
+        <section id="categories">
+            <h2>Meal Categories</h2>
+
+            <!-- Buttons to add or delete categories -->
+            <button id="addCategoryBtn">Add New Category</button>
+            <button id="deleteCategoryBtn">Delete Category</button>
+
+            <!-- Container where category buttons will appear dynamically -->
+            <div id="categoryList"></div>
+
+            <!-- Optional delete confirmation section (hidden by default) -->
+            <div id="deleteCategoryList" style="display:none;">
+                <h3>Select a category to delete</h3>
+                <ul id="deleteCategoryOptions"></ul>
+                <button id="confirmDeleteBtn">Delete Category</button>
+                <button id="cancelDeleteBtn">Cancel</button>
+            </div>
+        </section>
+
+        <!-- MEALS SECTION -->
+        <!-- Meal header removed as requested -->
+        <section id="meals">
+            <!-- Meal items will appear here when a category is clicked -->
+            <div id="mealList"></div>
+        </section>
+
+        <!-- RECIPE DETAILS SECTION -->
+        <section id="recipe">
+            <h2>Recipe</h2>
+            <!-- Detailed recipe will appear here when a meal is clicked -->
+            <div id="recipeDetails"></div>
+        </section>
+    </main>
+</body>
+</html>

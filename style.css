@@ -1,0 +1,138 @@
+/* BASE STYLES */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+/* HEADER STYLES */
+header h1 {
+    color: #4CAF50;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* CATEGORY SECTION */
+#categories {
+    margin-bottom: 20px;
+}
+
+/* BUTTON CONTAINER FOR TOP ROW (Add and Delete buttons) */
+#categoryButtonsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Add New Category and Delete Category Buttons */
+#addCategoryBtn, #deleteCategoryBtn {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;  /* Green by default */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 180px;
+}
+
+#addCategoryBtn:hover, #deleteCategoryBtn:hover {
+    background-color: #45a049;  /* Darker green hover effect */
+}
+
+#addCategoryBtn.selected, #deleteCategoryBtn.selected {
+    background-color: #f4f4f9;  /* Page background when selected */
+    color: #333;
+}
+
+/* CATEGORY BUTTONS BELOW */
+#categoryList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* CATEGORY BUTTONS */
+#categoryList button {
+    margin: 10px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #4CAF50;  /* Green by default */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 180px;
+}
+
+#categoryList button:hover {
+    background-color: #45a049;  /* Darker green hover effect */
+}
+
+#categoryList button.selected {
+    background-color: #f4f4f9;  /* Page background when selected */
+    color: #333;
+}
+
+/* MEAL GRID */
+#mealList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* MEAL ITEM */
+#mealList .mealItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    width: 180px;
+    margin: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#mealList .mealItem:hover {
+    transform: scale(1.05);
+}
+
+/* MEAL IMAGES */
+#mealList img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+/* RECIPE DETAILS */
+#recipeDetails {
+    margin-top: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#recipeDetails img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
