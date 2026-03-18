@@ -1,0 +1,112 @@
+/* Global Styles*/
+body {
+    font-family: Arial, sans-serif; /* Main font */
+    margin: 0;                      /* Remove default spacing */
+    background: #f4f4f4;            /* Light gray background */
+}
+
+/* Header*/
+header {
+    text-align: center;             /* Center the text */
+    background: #4CAF50;            /* Green header */
+    color: white;                   /* White text */
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*Layout*/
+.layout {
+    display: flex;                  /* Flex layout for panels */
+    justify-content: space-between; /* Space between left and right */
+    gap: 40px;                      /* Gap between panels */
+    padding: 20px;
+}
+
+/* Panels*/
+#leftPanel, #rightPanel {
+    padding: 20px;
+    background: #fff;               /* White panel background */
+    border-radius: 6px;
+}
+
+#leftPanel { width: 60%; }         /* Left panel larger */
+#rightPanel { width: 35%; }        /* Right panel smaller */
+
+/*Category Items */
+.categoryItem {
+    display: block;
+    margin: 8px 0;
+    padding: 10px;
+    background: #e0f7fa;           /* Light cyan */
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;                /* Clickable effect */
+}
+
+/* Checkbox styling */
+.categoryCheckbox {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.categoryCheckbox input[type="checkbox"] {
+    margin-right: 8px;              /* Space between box and label */
+}
+
+/* ========================
+   Buttons
+   ======================== */
+.buttons { margin: 10px 0 20px; }
+
+button {
+    padding: 8px 14px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover { background-color: #45a049; }
+
+/* Meal List / Cards*/
+#mealList {
+    display: grid;
+    grid-template-columns: repeat(3, 160px); /* 3 cards per row */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.meal {
+    text-align: center;
+    cursor: pointer;
+}
+
+.meal img {
+    width: 120px;
+    height: 120px;
+    border-radius: 6px;
+}
+
+.meal p { font-size: 14px; }
+
+/* Recipe Details Panel*/
+#recipeDetails {
+    margin-top: 20px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    max-height: 500px;   /* Limit height */
+    overflow-y: auto;    /* Scroll if content is long */
+}
+
+#recipeDetails h3 { color: #4CAF50; }
+
+/*Category List Labels*/
+ 
+#categoryList label { display: block; margin: 6px 0; cursor: pointer; }

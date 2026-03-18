@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Store</title>
+
+    <!-- Link to CSS for styling -->
+    <link rel="stylesheet" href="style.css?">
+
+    <!-- Link to JS for interactivity -->
+    <script src="script.js?" defer></script>
+</head>
+
+<body>
+
+<header>
+    <!-- Main site title -->
+    <h1>Recipe Store</h1>
+</header>
+
+<main class="layout">
+
+    <section id="leftPanel">
+        <!-- Heading for meal categories -->
+        <h2>Meal Categories</h2>
+
+        <!-- Container for dynamic category list -->
+        <div id="categoryList"></div>
+
+        <!-- Buttons to add or remove categories/meals -->
+        <div class="buttons">
+            <button id="addBtn">Add</button>
+            <button id="removeBtn">Remove</button>
+        </div>
+
+        <!-- Grid container for meal items -->
+        <div id="mealList"></div>
+    </section>
+
+    <section id="rightPanel">
+        <!-- Container showing details for the selected recipe -->
+        <div id="recipeDetails">
+            <h3>Recipe</h3>
+            <p>Select a meal to view the recipe.</p>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>
