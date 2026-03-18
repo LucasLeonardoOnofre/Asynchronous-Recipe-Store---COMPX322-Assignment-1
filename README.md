@@ -1,4 +1,4 @@
-Asynchronous Recipe Store – COMPX322-26A Assignment One
+Asynchronous Requests - Recipe Store – COMPX322-26A Assignment One
 
 This project is the first assignment for COMPX322-26A, where a single-page web application is created to display recipes asynchronously based on meal categories fetched from a MySQL database.
 
